@@ -1,0 +1,31 @@
+<html>
+<head>
+<script src="./scripts/jquery-3.4.0.js"></script>
+<script>
+$(document).ready(function(){
+   $('#btn').click(function(){
+        $.ajax({
+		    url:"add.php?no1="+$('#n1').val()+"&no2="+$('#n2').val(),
+			success:function(d,s,xhr){
+			   $('#myid').html(d);
+			},
+			error:function(error,status,xhr){
+			$('#myid').html(status);
+			}
+			});
+		});
+   });
+
+
+
+</script>
+</head>
+<body>
+<form>
+  Num 1: <input type="text" name="no1" id="n1">
+  Num 2: <input type="text" name="no2" id="n2">
+  <input type="button" name="btn" id="btn" value="Add">
+ </form>
+ <div id="myid"></div>
+</body>
+</html>

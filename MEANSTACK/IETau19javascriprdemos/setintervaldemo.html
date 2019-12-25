@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+
+var intclock=window.setInterval("clock()",30);
+function clock(){
+   d=new Date();
+   document.getElementById("myid").innerHTML=d;
+       
+   }
+
+</script>
+</head>
+<body>
+<p id="myid"></p>
+<input type="button" name="btn" value="Click me" onclick="window.clearInterval(intclock);">
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<!--<script src="../Scripts/jquery-1.6.2.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script>
+$(document).ready(function(){
+   $('div p').css({"color":"red",
+                    "border":"2px solid red"}).attr("name","nm");
+   //$('p:even').attr("name","nm");
+})
+</script>
+</head>
+<body>
+ <p>This is para  1 outside div</p>
+ <p>This is para 2 outside div</p>
+<div>
+ <p>This is para 1</p>
+ <p>This is para 2</p>
+ <p>This is para 3</p>
+ <p>This is para 4</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!--<html>
+<head>
+<script>
+function addNumber(){
+     var n1=document.getElementById("txt").value;
+	 var n2=document.getElementById("txt1").value;
+	 c=parseInt(n1)+parseInt(n2);
+	 //alert("addition: "+c);
+	// document.write("addition: "+c)
+	document.getElementById("myid").innerHTML="addition: "+c;
+}
+</script>
+</head>
+<body>
+<form>
+<table>
+ <tr> <td>Number 1:</td><td><input type="text" name="txt" id="txt"></td> </tr>
+ <tr> <td>Number 2:</td><td><input type="text" name="txt1" id="txt1"></td> </tr>
+ <tr> <td></td><td><input type="button" name="btn" value="Addition" onclick="addNumber()"></td> </tr>
+  </table>
+</form>
+<p id="myid"></p>
+</body>
+
+</html>
+-->
+<html>
+<head>
+	<script>
+		function myfunction()
+		{
+			var v1=document.getElementById("txt").value;
+			var v2=document.getElementById("txt1").value;
+			c=parseInt(v1)+parseInt(v2);
+			
+			document.getElementById("myid").innerHTML="addition:"+c; 
+		}
+
+
+	</script>
+</head>
+<body>
+<table>
+	<tr>
+		<td>
+			number1
+		</td>
+		<td>
+			<input type="text" name="txt" id="txt">
+		</td>
+	</tr>
+
+
+	<tr>
+		<td>
+			number2
+		</td>
+
+
+		<td>
+			<input type="text" name="txt" id="txt1">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<input type="button" type="btn" value="addtion" onclick="myfunction()">
+		</td>
+	</tr>
+
+</table>
+<p id="myid"></p>
+</body>
+<footer>
+thanks 
+</footer>
+
+</html>

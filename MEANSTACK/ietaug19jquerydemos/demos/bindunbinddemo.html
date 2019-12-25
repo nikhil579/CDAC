@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+ .myclass{
+    border:4px solid red;
+    background-color:blue;
+	color:white;
+	height:100;
+	
+ }
+</style>
+<script src="../Scripts/jquery-1.6.2.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>-->
+<script>
+
+$(document).ready(function(){
+    $('#btn1').click(function(){
+	    /* $("#mychk").bind('change',function(){
+		       if($(this).is(':checked')){
+			       alert("checked :"+$(this).val());
+			   }
+			   else{
+			     alert("unchecked :");
+			   }
+		 });*/
+		 $('#myid').delegate("#mychk",'change',function(){
+		       if($(this).is(':checked')){
+			       alert("checked :"+$(this).val());
+			   }
+			   else{
+			     alert("unchecked :");
+			   }
+		 });
+		 
+	});
+	////remove event
+	$('#btn2').click(function(){
+	     //$("#mychk").unbind('change');
+		 $('#myid').undelegate("#mychk",'change');
+		 
+	});
+	//create checkbox copy
+	$('#btn3').click(function(){
+	     var v=$("#mychk").clone();
+		 $('#myid').append(v);
+	});
+  
+});//document ready end
+</script>
+</head>
+<body>
+ <div id="myid">
+    <input type="checkbox" name="ch" id="mychk" value="Reading">Reading
+ <div>
+    <input type="button" name="btn" value="Assign" id="btn1">
+	<input type="button" name="btn" value="Remove" id="btn2">
+	<input type="button" name="btn" value="Copy" id="btn3">
+</body>
+</body>
+</html>

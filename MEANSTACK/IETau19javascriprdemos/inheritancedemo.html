@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+function employee(id,nm,desg){
+       this.id=id;
+	   this.name=nm;
+	   this.desg=desg;
+   }
+function assignValaue(){
+     emp1=new employee(10,"aaa","shdgfh");
+	 emp2={dept:"hr",sal:"33333"};
+	 emp2.__proto__=emp1
+	 emp2.myfunction=function(){
+	 }
+	 for(p in emp2){
+	 if(emp2.hasOwnProperty(p)){
+	    document.write("Own property--->"+p+"<br>");
+	 }
+	 document.write(p+"----->"+emp2[p]+"<br>");
+	 }
+}
+</script>
+</head>
+<body>
+Id  : <input type="text" name="id" id="id">
+Name :<input type="text" name="nm" id="nm">
+Designation :<input type="text" name="desg" id="desg">
+<input type="button" name="btn" value="Click me" onclick="assignValaue()">
+</body>
+</html>

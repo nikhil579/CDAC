@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+ .myclass{
+    border:4px black;
+    background-color:grey;
+	color:white;
+	height:20;
+	width:100;
+	
+ }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script>
+
+$(document).ready(function(){
+      $('div').hover(function()
+	  {$(this).addClass("myclass");
+	  },function(){$(this).removeClass("myclass");});
+});//document ready end
+</script>
+</head>
+<body>
+ <div>
+     This is div
+ </div>
+</body>
+</html>

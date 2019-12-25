@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+ .myclass{
+    border:4px solid red;
+    background-color:blue;
+	color:white;
+	height:100;
+	
+ }
+</style>
+<script src="../Scripts/jquery-1.6.2.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>-->
+<script>
+
+$(document).ready(function(){
+   $('#btn1').click(function(){
+      $('span').each(function(index,element){
+	       alert($(element).text()+"-->"+index)
+	  })
+   }); 
+});//document ready end
+</script>
+</head>
+<body>
+ <span>This is span 111111</span>
+ <span>This is span 222222</span>
+ <span>This is span 33333</span>
+ <span>This is span 444444</span>
+ <span>This is span 555555</span>
+ <span>This is span 66666</span>
+ <input type="button" name="btn" id="btn1" value="Show data">
+ 
+</body>
+</body>
+</html>

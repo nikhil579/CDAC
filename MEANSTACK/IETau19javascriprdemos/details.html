@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function assignValaue(){
+   a=new Object();  //create blank object
+   a.id=document.getElementById("id").value;
+   a.name=document.getElementById("nm").value;
+   a.desg=document.getElementById("desg").value;
+   for(p in a){
+      document.write(p+"--->"+a[p]);
+   }
+}
+</script>
+</head>
+<body>
+Id  : <input type="text" name="id" id="id">
+Name :<input type="text" name="nm" id="nm">
+Designation :<input type="text" name="desg" id="desg">
+<input type="button" name="btn" value="Click me" onclick="assignValaue()">
+</body>
+</html>

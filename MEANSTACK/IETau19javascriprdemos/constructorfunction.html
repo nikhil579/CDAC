@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+function employee(id,nm,desg){
+       this.id=id;
+	   this.name=nm;
+	   this.desg=desg;
+   }
+function assignValaue(){
+     emp1=new employee(10,"aaa","shdgfh");
+	 for(p in emp1){
+	    document.write(p+"--->"+emp1[p]+"<br>");
+	 }
+	 emp2=new employee(30,"xxx","yyy");
+	 emp2.sal=4500;
+	 for(p in emp2){
+	    document.write(p+"--->"+emp2[p]+"<br>");
+	 }
+}
+</script>
+</head>
+<body>
+Id  : <input type="text" name="id" id="id">
+Name :<input type="text" name="nm" id="nm">
+Designation :<input type="text" name="desg" id="desg">
+<input type="button" name="btn" value="Click me" onclick="assignValaue()">
+</body>
+</html>

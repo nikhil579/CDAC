@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function chkString(){
+   var str=document.getElementById("txt").value;
+   var arr=str.split(" ");
+   if(arr.length==3){
+      alert("valid string");
+   }else{
+      alert("invalid string");
+   }
+}
+function changeBack(){
+ event.target.setAttribute("style","background-color:yellow");
+
+}
+function resetBack(){
+ event.target.setAttribute("style","background-color:white");
+
+}
+</script>
+</head>
+<body>
+<input type="text" name="txt" id="txt" onfocus="changeBack(event)" onblur="resetBack(event)">
+<input type="button" name="btn" value="click me" onclick="chkString()">
+
+</body>
+
+</html>

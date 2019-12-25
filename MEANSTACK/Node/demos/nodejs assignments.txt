@@ -1,0 +1,7 @@
+1. Write a program to store following functions
+factorial, printtable, prime, addition, fibonacci n terms, palindrom
+write another module by name use module.js and call all functions one by one.
+
+2.Design a form to display a text box and a button
+if user sends url "/? then display the html file.
+after user clicks on button in the form  display myfile.txt

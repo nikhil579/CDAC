@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+ .myclass{
+    border:4px solid red;
+    background-color:blue;
+	color:white;
+	height:100;
+	
+ }
+</style>
+<script src="../Scripts/jquery-1.6.2.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>-->
+<script>
+
+$(document).ready(function(){
+$('#btn1').click(function(){
+     var v=$('div p:last-child').clone();
+	 target=$('#mydiv')
+	 //$('#mydiv').append(v);
+	 v.appendTo(target);
+});//end of btn1
+$('#btn2').click(function(){
+     var v=$('<input type="text" name="nm">').clone();
+	 $('#mydiv').prepend(v);
+	 v.prependTo(target);
+});//end of btn1
+ $('#btn3').click(function(){
+     ////wrap span inside div
+     $('span').wrap("<div class='myclass'>");
+	 
+});//end of btn1   
+$('#btn4').click(function(){
+   $('div p:last-child').remove();
+}); 
+});//document ready end
+</script>
+</head>
+<body>
+ <div id="mydiv">
+     <p>This is para</p>
+	 
+ </div>
+ 
+ <span>This is span</span>
+ <span>This is span</span>
+ <input type="button" name="btn" id="btn1" value="Append">
+ <input type="button" name="btn" id="btn2" value="prepend">
+ <input type="button" name="btn" id="btn3" value="wrap element">
+ <input type="button" name="btn" id="btn4" value="remove element">
+</body>
+</body>
+</html>

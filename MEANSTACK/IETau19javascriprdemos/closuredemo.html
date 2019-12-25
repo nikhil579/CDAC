@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+counter=(function(){
+   var cnt=0;
+   console.log("i called myself");
+   return function(){
+      cnt++;
+	  document.getElementById("myid").innerHTML="you clicked "+cnt+" times";
+ }
+})();
+
+</script>
+</head>
+<body>
+<p id="myid"></p>
+<input type="button" name="btn" value="click me" onclick="counter()">
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+ .myclass{
+    border:4px solid red;
+    background-color:blue;
+	color:white;
+	height:100;
+	width:300
+	
+ }
+</style>
+<script src="../Scripts/jquery-1.6.2.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>-->
+<script>
+
+$(document).ready(function(){
+   $('#show').click(function(){
+   $('div.myclass').slideDown("fast",function(){
+            $('#mymsg').html("show complet");
+        });
+        
+   });
+   $('#hide').click(function(){
+   $('div.myclass').slideUp(2000,function(){
+            $('#mymsg').html("hide complet");
+        });
+        
+   });
+   $('#toggle').click(function(){
+   $('div.myclass').slideToggle(2000,function(){
+            $('#mymsg').html("show complet");
+        });
+        
+   })
+
+  
+});//document ready end
+</script>
+</head>
+<body>
+<div id="mymsg"></div>
+ <input type="button" name="btn" value="slide down" id="show">
+	<input type="button" name="btn" value="slide up" id="hide">
+	<input type="button" name="btn" value="slide toggle" id="toggle">
+
+ <div class="myclass">
+    CDAC Data
+ <div>
+
+</body>
+</body>
+</html>

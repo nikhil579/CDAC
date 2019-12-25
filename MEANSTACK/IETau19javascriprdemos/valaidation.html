@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+.errormsg{
+    color:red;
+}
+</style>
+<script src="myfunction.js">
+
+</script>
+</head>
+<body>
+<form onsubmit="return validatedata()">
+<table>
+ <tr> <td>Name:</td><td>
+ <input type="text" name="nm" id="nm"><span class="errormsg">*</span></td><td><p class="errormsg" id="nmmsg"></p></td> </tr>
+ <tr> <td>Hobbies:</td><td>
+ <input type="checkbox" name="hobbies" id="Reading" value="Reading">Reading&nbsp;&nbsp;<br>
+ <input type="checkbox" name="hobbies" id="Sleeping" value="Sleeping">Sleeping<br>
+ <input type="checkbox" name="hobbies" id="Trekking" value="Trekking">Trekking<br>
+ <input type="checkbox" name="hobbies" id="Eating" value="Eating">Eating <p id="hbmsg" 	class="errormsg"></p></td> </tr>
+ 
+ <tr> <td></td><td><input type="submit" name="btn" value="Display Data"></td> </tr>
+  </table>
+</form>
+<div id="myid"></div>
+</body>
+
+</html>
