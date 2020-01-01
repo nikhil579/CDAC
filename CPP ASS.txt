@@ -1,0 +1,8 @@
+CPP
+Write a console application which will accept user name and password at startup if user enter admin credentials then he will be able to add+del+update Employee records.
+-Employee may be a type of worker, sales manager, HR.
+-Employee have salary where are worker have extra working hour with per hour pay.
+Sales manager have travelling allowance with incentive as per target after completing total target.
+Hr has home allowance, incentive per requirement and number of recruitments.
+-This data entered by admin, if employee login with his credentials he can see only his details.
+Use file.txt to save the data.
